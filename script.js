@@ -101,6 +101,7 @@ const threejsMat = new THREE.MeshStandardMaterial({
 // Mesh
 
 const sphere = new THREE.Mesh(geometry,material)
+sphere.position.z=-1;
 scene.add(sphere);
 
 const terrainMesh = new THREE.Mesh(terrainObj, terrainMat)
