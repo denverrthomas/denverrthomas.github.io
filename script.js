@@ -101,7 +101,7 @@ const threejsMat = new THREE.MeshStandardMaterial({
 // Mesh
 
 const sphere = new THREE.Mesh(geometry,material)
-scene.add(sphere)
+scene.add(sphere);
 
 const terrainMesh = new THREE.Mesh(terrainObj, terrainMat)
 scene.add(terrainMesh)
@@ -117,6 +117,7 @@ terrainMesh2.rotation.x = 5.3
 const sunMesh = new THREE.Mesh(sunObj, sunMat)
 scene.add(sunMesh)
 sunMesh.position.z = -30
+sunMesh.position.y = 3
 // sunMesh.rotation.x = -270
 
 const planetConceptMesh = new THREE.Mesh(planetConceptObj, htmlMat)
@@ -191,6 +192,10 @@ camera.position.x = 0
 camera.position.y = 0
 camera.position.z = 10
 scene.add(camera)
+camera.position.y = 1
+camera.rotation.x = 1
+gsap.to(camera.position, {duration:2, y:0});
+gsap.to(camera.rotation, {duration:2, x:0});
 
 /**
  * Renderer
@@ -290,3 +295,4 @@ const tick = () =>
 }
 
 tick()
+

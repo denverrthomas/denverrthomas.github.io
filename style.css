@@ -25,6 +25,14 @@ body
     position: fixed;
 }
 
+span
+{
+    font-size: 36px;
+    background: -webkit-linear-gradient(rgb(110, 231, 255), rgb(255, 61, 61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .webgl
 {
     position: absolute;
@@ -96,11 +104,11 @@ body
     position:absolute;
     text-align: center;
     height:100vh;
-    width:100%;
+    width:100vw;
 }
 .title
 {
-    padding-left: 2em;
+    padding-left: 4em;
     position:absolute;
     top:43%;
     left:0;
@@ -115,10 +123,15 @@ body
     width: 30%;
 }
 
-.next
+.next-btn
 {
     padding-top: .5em;
-    opacity: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+.next-btn:hover
+{
+    opacity: 100%;
+    animation: none;
 }
 
 .about-me-title,.about-me-title2
@@ -140,19 +153,19 @@ body
 h1
 {
     letter-spacing: 5px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 p, button
 {
-    letter-spacing: 5px;
-    font-size: small;
-    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 300;
     line-height: 40px;
 }
 .about-me-title p,.about-me-title2 p
 {
-    padding-top: 2em;
+    padding-top: 3em;
 }
 .next2, .next3
 {
@@ -263,4 +276,11 @@ p, button
         position:relative;
         padding-top: 16em;
     }
+}
+
+@keyframes pulse
+{
+    0% {scale: 80%; opacity: 50%;}
+    50% {scale: 100%; opacity: 80%;}
+    100% {scale: 80%; opacity: 50%;}
 }
