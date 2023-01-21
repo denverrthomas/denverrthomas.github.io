@@ -17,6 +17,10 @@ body
     font-family: 'Poppins';
     color:white;
 }
+a
+{
+    z-index: 999;
+}
 
 .container
 {
@@ -257,7 +261,7 @@ p, button
     {
         font-weight: 100;
         position: relative;
-        padding: 0em 0em 5em 0em;
+        padding: 0em 0em 8em 0em;
         margin:auto;
         width: 80%;
     }
