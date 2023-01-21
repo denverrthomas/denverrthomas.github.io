@@ -121,7 +121,7 @@ sunMesh.position.z = -30
 
 const planetConceptMesh = new THREE.Mesh(planetConceptObj, htmlMat)
 sunMesh.add(planetConceptMesh)
-planetConceptMesh.position.x = 9
+planetConceptMesh.position.x = 0
 const planetConceptMesh2 = new THREE.Mesh(planetConceptObj2, cssMat)
 sunMesh.add(planetConceptMesh2)
 planetConceptMesh2.position.x = -9
