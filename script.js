@@ -193,10 +193,11 @@ camera.position.x = 0
 camera.position.y = 0
 camera.position.z = 10
 scene.add(camera)
-camera.position.y = 9
+
+camera.position.y = 20
 camera.rotation.x = 1
 gsap.to(camera.position, {duration:3, y:0});
-gsap.to(camera.rotation, {duration:2, x:0});
+gsap.to(camera.rotation, {duration:3, x:0});
 
 /**
  * Renderer
