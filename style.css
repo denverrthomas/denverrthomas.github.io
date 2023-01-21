@@ -114,7 +114,7 @@ span
 {
     padding-left: 4em;
     position:absolute;
-    top:43%;
+    top:40%;
     left:0;
 }
 .headline
@@ -123,7 +123,7 @@ span
     font-weight: 100;
     position: absolute;
     right:0;
-    top:45%;
+    top:40%;
     width: 30%;
 }
 
@@ -156,15 +156,15 @@ span
 
 h1
 {
-    letter-spacing: 5px;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 
 p, button
 {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 40px;
 }
 .about-me-title p,.about-me-title2 p
@@ -261,7 +261,7 @@ p, button
     {
         font-weight: 100;
         position: relative;
-        padding: 0em 0em 8em 0em;
+        padding: 0em 0em 1em 0em;
         margin:auto;
         width: 80%;
     }
