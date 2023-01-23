@@ -253,10 +253,11 @@ p, button
     }
     .window-size-container
     {
-        position:absolute;
+        position:sticky;
+        top:0;
         text-align: center;
         height:100vh;
-        width:100%;
+        width:100vw;
         display: flex;
     }
     .title
