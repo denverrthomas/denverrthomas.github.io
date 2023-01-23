@@ -24,6 +24,9 @@ const scene2 = new THREE.Scene()
 const geometry = new THREE.SphereBufferGeometry(4,32, 32) // title sphere
 const terrainObj = new THREE.PlaneBufferGeometry(6,6,64,64) // terrain
 
+// Objects : Me Section
+const ringGeometry = new THREE.TorusGeometry( .5, 1, 16, 100 );
+
 // Objects : Solar System Section (My Skills)//
 const sunObj = new THREE.SphereBufferGeometry(3,32,32) // sun
 const planetConceptObj = new THREE.SphereBufferGeometry(1.5, 32, 32) // planet idea
@@ -96,6 +99,12 @@ const threejsMat = new THREE.MeshStandardMaterial({
     metalness: 0.1,
     roughness: 0
 })
+const ringMaterial = new THREE.PointsMaterial(
+    {
+        color: "#0xA9A9A9",
+        size: 0.1
+    }
+)
 
 
 // Mesh
@@ -135,6 +144,10 @@ const planetConceptMesh4 = new THREE.Mesh(planetConceptObj3, threejsMat)
 sunMesh.add(planetConceptMesh4)
 planetConceptMesh4.position.z = -10
 planetConceptMesh4.position.x = -5
+
+// const ringMesh = new THREE.Mesh(ringGeometry, ringMaterial)
+// scene.add(ringMesh)
+// ringMesh.position.z = -10
 
 // const moonConceptMesh = new THREE.Mesh(moonConceptObj, moonConceptMat)
 // planetConceptMesh.add(moonConceptMesh)
